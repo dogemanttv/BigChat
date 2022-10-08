@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigChat - Public Chat</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="/publicchat.js"></script>
+</head>
+<body>
+    <!--Icons-->
+    <div>
+        <img src="/peopleicon.svg" style="width: 80px; height: 80px; position: fixed; left: 0px;cursor: pointer;" alt="">
+        <img src="/chaticon.svg" style="width: 80px; height: 80px; position: fixed; top: 85px; left: 0px;cursor: pointer;" alt="" onclick="window.location = '/chat/public'">
+        <img src="/homeicon.svg" style="width: 80px; height: 80px; position: fixed; top: 170px; left: 0px;cursor: pointer;" alt="" onclick="window.location = '/home'">
+        <img src="/nameicon.svg" style="width: 80px; height: 80px; position: fixed; top: 255px; left: 0px;cursor: pointer;" alt="" onclick="localStorage.setItem('name', prompt('Change name.'))">
+        
+    </div>
+    <!--Messages-->
+    <p style="position:absolute;bottom: 0;left:50%;bottom:50px;" id="messages"></p>
+    <button style="position:absolute;bottom: 0;right:0px;height:66px;" onclick="submit()">Send</button>
+    <form id="form" action="" style="position:absolute;bottom: 0;">
+      <input id="input" autocomplete="off" style="height:60px;width: 1050%;" />
+      
+    </form>
+</body>
+</html>

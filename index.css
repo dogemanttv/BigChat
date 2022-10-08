@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+.sign {
+    color:cornflowerblue;
+    position: fixed; top: 0; right:60px; border: 0;
+}
+.log {
+    color:cornflowerblue;
+    position: fixed; top: 0; right: 6px; border: 0;
+    font-size: 4px;
+    
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+a {
+    color:cornflowerblue; 
+}

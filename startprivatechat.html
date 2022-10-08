@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigChat - Select Person to Private Chat</title>
+    <link rel="stylesheet" href="/index.css">
+    <script defer src="/spc.js"></script>
+</head>
+<body>
+    <h1>Start Private Chat</h1>
+    <div>
+        <img src="/peopleicon.svg" style="width: 80px; height: 80px; position:absolute; top: 85px;left: 0px;cursor: pointer;" alt="">
+        <img src="/homeicon.svg" style="width: 80px; height: 80px; position:absolute; top: 255px; left: 0px;cursor: pointer;" alt="" onclick="window.location = '/home'">
+        <img src="/chaticon.svg" style="width: 80px; height: 80px; position:absolute; top: 170px; left: 0px;cursor: pointer;" alt="" onclick="window.location = '/chat/public'">
+        <img src="/nameicon.svg" style="width: 80px; height: 80px; position:absolute; top: 340px; left: 0px;cursor: pointer;" alt="" onclick="localStorage.setItem('name', prompt('Change name.'))">
+        
+    </div>
+        <!--Messages-->
+        <button style="position:absolute;bottom: 0;right:0px;height:66px;" onclick="submit()">Start</button>
+    <form id="form" action="" style="position:absolute;bottom: 0;">
+      <input id="input" autocomplete="off" style="height:60px;width: 1052%;" placeholder="Enter Username to Start Chat" />
+      
+    </form>
+</body>
+</html>
